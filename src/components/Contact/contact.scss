@@ -1,0 +1,121 @@
+.contact-form{
+    width: 100%;
+    margin-top: 20px;
+
+    ul{
+        margin: 0;
+        padding: 0;
+
+
+        li{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            display: block;
+            overflow: hidden;
+            position: relative;
+            opacity: 0;
+            animation: fadeInUp 2s 2s forwards;
+            clear: both;
+
+
+            input[type="text"],
+            input[type='email']{
+                width: 100%;
+                background: #115173;
+                border: 0;
+                height: 50px;
+                font-size: 16px;
+                color: #fff;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+            textarea{
+                width: 100%;
+                background: #115173;
+                color: #fff;
+                border: 0;
+                padding: 20px;
+                min-height: 150px;
+                font-size: 16px;
+                box-sizing: border-box;
+            }
+            .flat-button{
+                color: #ffd700;
+                background: 0 0;
+                font-size: 13px;
+                font-weight: 900;
+                letter-spacing: 3px;
+                border: 1px solid #ffd700;
+                text-decoration: none;
+                float: right;
+                border-radius: 4px;
+                padding: 8px 10px;
+            }
+        }
+
+        li.half{
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+        
+    }
+    
+}
+
+.info-map{
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    right: 22%;
+    z-index: 9;
+    width: 267px;
+    padding: 20px;
+    color: #fff;
+    font-family: "Helvetica";
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s forwards;
+    @media (max-width: 700px){
+        width: 25%;
+        right: 10%;
+        top: 2%;
+        
+    }
+
+
+    span{
+        font-size: 16px;
+        display: block;
+        padding-top: 20px;
+        color: #ffd700;
+
+    }
+}
+
+.map-wrap{
+
+    background: rgba(8, 253, 216, 0.1);
+    float: right;
+    width: 53%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.leaflet-container{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: backInRight 1s 1.2s forwards;
+    box-sizing: border-box;
+
+}
+

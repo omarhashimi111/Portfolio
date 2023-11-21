@@ -9,6 +9,7 @@
     left: auto;
     margin: auto;
     opacity: 0;
+    animation: fadeIn 3.8s 2.5s forwards;
 
     @media (max-width: 700px){
         display: none;
@@ -24,7 +25,7 @@
         right: auto;
         margin: auto;
         width: 100%;
-        opacity: 0;
+        height: 70%;
         transform: rotateZ(18deg);
     }
 }

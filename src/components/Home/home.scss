@@ -8,6 +8,10 @@
         width: 40%;
         transform: translateY(-50%);
         max-height: 90%;
+
+        @media (max-width: 769px){
+            width: 93%;
+        }
     }
 
     h1{
